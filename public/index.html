@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jay Vihirkar — Portfolio</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+
+    :root{
+      --bg: #0f0f10;
+      --panel: #1a1b1e;
+      --text: #e6e6e6;
+      --muted: #a7a7a7;
+      --accent: #4da3ff;
+      --border: #2a2b31;
+    }
+
+    html{scroll-behavior:smooth}
+    body { background: var(--bg); color: var(--text); line-height: 1.7; }
+
+    header { padding: 28px 16px 22px; border-bottom: 1px solid var(--border); text-align: center; }
+    header h1 { font-size: 2.1rem; letter-spacing: .5px; }
+    header p.tag { color: var(--muted); margin-top: 6px; }
+
+    nav { margin-top: 12px; }
+    nav a { margin: 0 12px; text-decoration: none; color: var(--muted); border-bottom: 1px solid transparent; transition: .25s; }
+    nav a:hover { color: var(--text); border-color: var(--accent); }
+
+    .container { max-width: 960px; margin: auto; padding: 24px 18px; }
+
+    section { margin: 44px 0; }
+    h2 { font-size: 1.4rem; margin-bottom: 14px; color: #fff; border-bottom: 2px solid var(--border); display: inline-block; padding-bottom: 6px; }
+    p { color: #cfcfcf; }
+
+    .hero { display: grid; gap: 16px; align-items: center; justify-items: center; text-align: center; padding-top: 10px; }
+    .hero .name { font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 700; }
+    .hero .sub { color: var(--muted); font-size: 1rem; }
+
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    .card { background: var(--panel); padding: 18px; border-radius: 14px; border: 1px solid var(--border); transition: transform .25s, box-shadow .25s; }
+    .card h3{ margin-bottom: 6px; }
+    .card p{ color: #bdbdbd; font-size: .95rem; }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 10px 24px rgba(0,0,0,.35); }
+
+    .links a{ color: var(--accent); text-decoration: none; }
+    .links a:hover{ text-decoration: underline; }
+
+    footer { text-align: center; padding: 24px; border-top: 1px solid var(--border); color: var(--muted); margin-top: 36px; font-size: .95rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-label="intro">
+      <div class="name">Jay Vihirkar</div>
+      <div class="sub">VIT Pune • Developer & Electronics Enthusiast</div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi! I’m <strong>Jay Vihirkar</strong> from <strong>VIT Pune</strong>. I enjoy building clean, user-friendly web apps and exploring electronics + software intersections. Currently learning web development and Java/DSA.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>A short description of your project. Add a link to GitHub or a live demo below.</p>
+          <p class="links"><a href="#">Live</a> · <a href="#">Code</a></p>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>Another small write‑up highlighting problem, stack, and impact.</p>
+          <p class="links"><a href="#">Live</a> · <a href="#">Code</a></p>
+        </article>
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>Keep it concise—what it does, why it’s cool, and your role.</p>
+          <p class="links"><a href="#">Live</a> · <a href="#">Code</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a class="links" href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a class="links" href="#">linkedin.com/in/jayvihirkar</a></p>
+      <p>GitHub: <a class="links" href="#">github.com/jayvihirkar</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Jay Vihirkar · VIT Pune</p>
+  </footer>
+</body>
+</html>
